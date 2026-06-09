@@ -1,8 +1,13 @@
 
-export interface Todo {
-  id: string;
-  text: string;
-  completed: boolean;
-  createdAt: number;
+export type Category = 'Starters' | 'Mains' | 'Desserts' | 'Drinks';
+
+export interface MenuItem {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  category: Category;
+  image: string;
+  badge?: string;
 }
   
